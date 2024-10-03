@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
     tools:context=".MainActivity"
     >
 
@@ -15,7 +17,7 @@
         android:padding="20dp"
         android:text="@string/app_name"
         android:textColor="@color/black"
-        android:textSize="35sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         />
 
@@ -46,7 +48,7 @@
                 />
 
             <EditText
-                android:id="@+id/edWeight"
+                android:id="@+id/edTempValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -84,11 +86,53 @@
                 android:id="@+id/spinnerUnits"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/white"
                 />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Result:"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:background="@android:drawable/toast_frame"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:paddingVertical="10dp"
+        android:textColor="#FFFCFC"
+        android:textStyle="bold"
+        />
+
+
+
 
 
 </LinearLayout>
