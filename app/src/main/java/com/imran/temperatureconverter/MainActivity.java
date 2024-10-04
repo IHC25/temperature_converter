@@ -93,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
                     float fahrenheitToCelsius = (tempValue - 32) * 5/9;
                     result.setText(String.valueOf(fahrenheitToCelsius +" °C"));
                 } else {
-                    Toast.makeText(MainActivity.this, "Please select a unit", Toast.LENGTH_SHORT).show();
+                    //show error message in input field
+                    edTempValue.setError("Please enter a value");
                 }
             }
         });
